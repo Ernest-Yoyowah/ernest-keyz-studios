@@ -66,7 +66,7 @@ export default function HeroSection() {
             Download PulseMIDI
           </GlowButton>
           <GlowButton
-            href="https://github.com/ernest-keyz-studios"
+            href="https://github.com/Ernest-Yoyowah/pulsemidi"
             variant="secondary"
             size="lg"
             external

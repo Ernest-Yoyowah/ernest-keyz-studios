@@ -25,12 +25,36 @@ import SectionHeader from "@/components/shared/SectionHeader";
 import GlowButton from "@/components/shared/GlowButton";
 
 const features = [
-  { icon: Activity, title: "Real-time MIDI Monitor", desc: "See every MIDI message as it happens — Note On/Off, CC, pitch bend, aftertouch, and system messages. Filter by channel, type, or device. Zero-latency display with configurable message history." },
-  { icon: Keyboard, title: "88-Key Keyboard Visualization", desc: "Full 88-key keyboard display showing active notes in real time. Color-coded by channel. Velocity sensitivity shown with key brightness. Perfect for diagnosing stuck notes and double-triggers." },
-  { icon: Sliders, title: "CC & Sustain Diagnostics", desc: "Monitor all 128 CC values simultaneously. Real-time sustain pedal state, modulation wheel position, expression pedal tracking. Identify noisy controllers, stuck pedals, and parameter drift instantly." },
-  { icon: GitBranch, title: "MIDI Routing Visualization", desc: "Visual map of all MIDI devices, connections, and routing paths. See which devices are sending to which destinations. Diagnose routing conflicts and feedback loops in complex setups." },
-  { icon: Music, title: "Chord Detection Engine", desc: "Identify chords, voicings, and harmonic content as you play. Displays root, quality, extensions, and bass note. Supports slash chords and polychords. Real-time with configurable latency window." },
-  { icon: Zap, title: "Device Connection Status", desc: "Monitor hardware connectivity in real time. Get alerts when devices connect or disconnect. Track port activity. Essential for live performance setups where equipment changes happen mid-show." },
+  {
+    icon: Activity,
+    title: "Real-time MIDI Monitor",
+    desc: "See every MIDI message as it happens — Note On/Off, CC, pitch bend, aftertouch, and system messages. Filter by channel, type, or device. Zero-latency display with configurable message history.",
+  },
+  {
+    icon: Keyboard,
+    title: "88-Key Keyboard Visualization",
+    desc: "Full 88-key keyboard display showing active notes in real time. Color-coded by channel. Velocity sensitivity shown with key brightness. Perfect for diagnosing stuck notes and double-triggers.",
+  },
+  {
+    icon: Sliders,
+    title: "CC & Sustain Diagnostics",
+    desc: "Monitor all 128 CC values simultaneously. Real-time sustain pedal state, modulation wheel position, expression pedal tracking. Identify noisy controllers, stuck pedals, and parameter drift instantly.",
+  },
+  {
+    icon: GitBranch,
+    title: "MIDI Routing Visualization",
+    desc: "Visual map of all MIDI devices, connections, and routing paths. See which devices are sending to which destinations. Diagnose routing conflicts and feedback loops in complex setups.",
+  },
+  {
+    icon: Music,
+    title: "Chord Detection Engine",
+    desc: "Identify chords, voicings, and harmonic content as you play. Displays root, quality, extensions, and bass note. Supports slash chords and polychords. Real-time with configurable latency window.",
+  },
+  {
+    icon: Zap,
+    title: "Device Connection Status",
+    desc: "Monitor hardware connectivity in real time. Get alerts when devices connect or disconnect. Track port activity. Essential for live performance setups where equipment changes happen mid-show.",
+  },
 ];
 
 const techStack = [
@@ -43,8 +67,8 @@ const techStack = [
 ];
 
 const installSteps = [
-  "Download the .dmg file from the download page",
-  "Open the .dmg and drag PulseMIDI.app to Applications",
+  "Download the .pkg installer from the download page",
+  "Run the .pkg and follow the installer steps",
   "Launch PulseMIDI from Applications or Spotlight",
   "Grant MIDI access permission when prompted",
   "Connect your MIDI devices — they appear automatically",
@@ -68,12 +92,43 @@ const daws = [
   "Digital Performer 11+",
 ];
 
-const heroTags = ["Standalone", "VST3", "CLAP", "macOS 12+", "Intel", "Apple Silicon"];
+const heroTags = [
+  "Standalone",
+  "VST3",
+  "CLAP",
+  "macOS 12+",
+  "Intel",
+  "Apple Silicon",
+];
 
 const links = [
-  { icon: Download, title: "Download PulseMIDI", desc: "Free download, macOS universal binary", href: "/download", cta: "Download", primary: true, external: false },
-  { icon: GithubIcon, title: "GitHub Repository", desc: "Source code, issues, and releases", href: "https://github.com/ernest-keyz-studios/pulsemidi", cta: "Open GitHub", primary: false, external: true },
-  { icon: ExternalLink, title: "Documentation", desc: "Full feature reference and guides", href: "/docs", cta: "Read Docs", primary: false, external: false },
+  {
+    icon: Download,
+    title: "Download PulseMIDI",
+    desc: "Free download, macOS universal binary",
+    href: "/download",
+    cta: "Download",
+    primary: true,
+    external: false,
+  },
+  {
+    icon: GithubIcon,
+    title: "GitHub Repository",
+    desc: "Source code, issues, and releases",
+    href: "https://github.com/Ernest-Yoyowah/pulsemidi",
+    cta: "Open GitHub",
+    primary: false,
+    external: true,
+  },
+  {
+    icon: ExternalLink,
+    title: "Documentation",
+    desc: "Full feature reference and guides",
+    href: "/docs",
+    cta: "Read Docs",
+    primary: false,
+    external: false,
+  },
 ] as const;
 
 export default function PulseMIDIContent() {
@@ -85,7 +140,10 @@ export default function PulseMIDIContent() {
         background={
           <div
             className="absolute inset-0 pointer-events-none"
-            style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(0,212,255,0.06) 0%, transparent 65%)" }}
+            style={{
+              background:
+                "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(0,212,255,0.06) 0%, transparent 65%)",
+            }}
           />
         }
       >
@@ -129,7 +187,10 @@ export default function PulseMIDIContent() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-base text-[#7d7d9a] leading-relaxed max-w-lg mb-8"
             >
-              Monitor, visualize, and debug your complete MIDI signal chain from a single interface. Built for keyboard players and live performers who need to know exactly what&apos;s happening inside their system — in real time.
+              Monitor, visualize, and debug your complete MIDI signal chain from
+              a single interface. Built for keyboard players and live performers
+              who need to know exactly what&apos;s happening inside their system
+              — in real time.
             </motion.p>
 
             <motion.div
@@ -153,7 +214,12 @@ export default function PulseMIDIContent() {
                 <Download size={16} />
                 Download Free
               </GlowButton>
-              <GlowButton href="https://github.com/Ernest-Yoyowah/pulsemidi" variant="secondary" size="lg" external>
+              <GlowButton
+                href="https://github.com/Ernest-Yoyowah/pulsemidi"
+                variant="secondary"
+                size="lg"
+                external
+              >
                 <GithubIcon size={16} />
                 View on GitHub
               </GlowButton>
@@ -169,14 +235,20 @@ export default function PulseMIDIContent() {
             <AppMockup />
             <div
               className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-2/3 h-12 blur-2xl opacity-20"
-              style={{ background: "radial-gradient(ellipse, #00d4ff, transparent)" }}
+              style={{
+                background: "radial-gradient(ellipse, #00d4ff, transparent)",
+              }}
             />
           </motion.div>
         </div>
       </PageSection>
 
       <PageSection className="py-24">
-        <SectionHeader eyebrow="Features" title="Everything you need to debug MIDI" className="mb-14" />
+        <SectionHeader
+          eyebrow="Features"
+          title="Everything you need to debug MIDI"
+          className="mb-14"
+        />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {features.map((feature, i) => (
             <motion.div
@@ -190,8 +262,12 @@ export default function PulseMIDIContent() {
               <div className="mb-4">
                 <IconBox icon={feature.icon} />
               </div>
-              <h3 className="text-base font-semibold text-[#f0f0f8] mb-3">{feature.title}</h3>
-              <p className="text-sm text-[#7d7d9a] leading-relaxed">{feature.desc}</p>
+              <h3 className="text-base font-semibold text-[#f0f0f8] mb-3">
+                {feature.title}
+              </h3>
+              <p className="text-sm text-[#7d7d9a] leading-relaxed">
+                {feature.desc}
+              </p>
             </motion.div>
           ))}
         </div>
@@ -205,9 +281,16 @@ export default function PulseMIDIContent() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <SectionHeader eyebrow="Architecture" title="Built with modern Apple tech" className="mb-6" />
+            <SectionHeader
+              eyebrow="Architecture"
+              title="Built with modern Apple tech"
+              className="mb-6"
+            />
             <p className="text-sm text-[#7d7d9a] leading-relaxed mb-8">
-              PulseMIDI is a native macOS application built with Swift and SwiftUI. The MIDI engine uses CoreMIDI for zero-latency message handling. Plugin formats are implemented using standard AudioUnit v3 and CLAP SDKs.
+              PulseMIDI is a native macOS application built with Swift and
+              SwiftUI. The MIDI engine uses CoreMIDI for zero-latency message
+              handling. Plugin formats are implemented using standard AudioUnit
+              v3 and CLAP SDKs.
             </p>
             <div className="space-y-2">
               {techStack.map((tech, i) => (
@@ -219,8 +302,12 @@ export default function PulseMIDIContent() {
                   transition={{ delay: i * 0.06 }}
                   className="flex items-center justify-between px-4 py-3 rounded-lg bg-white/[0.03] border border-white/[0.06]"
                 >
-                  <span className="text-sm font-mono text-[#f0f0f8]">{tech.name}</span>
-                  <span className="text-xs text-[#4a4a5e]">{tech.category}</span>
+                  <span className="text-sm font-mono text-[#f0f0f8]">
+                    {tech.name}
+                  </span>
+                  <span className="text-xs text-[#4a4a5e]">
+                    {tech.category}
+                  </span>
                 </motion.div>
               ))}
             </div>
@@ -232,7 +319,11 @@ export default function PulseMIDIContent() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <SectionHeader eyebrow="Installation" title="Up and running in 2 minutes" className="mb-6" />
+            <SectionHeader
+              eyebrow="Installation"
+              title="Up and running in 2 minutes"
+              className="mb-6"
+            />
             <div className="space-y-3 mb-8">
               {installSteps.map((step, i) => (
                 <motion.div
@@ -250,11 +341,16 @@ export default function PulseMIDIContent() {
             <div className="glass-panel rounded-xl p-5">
               <div className="flex items-center gap-2 mb-3">
                 <Terminal size={14} className="text-[#00d4ff]/60" />
-                <span className="text-xs font-mono text-[#4a4a5e]">System requirements</span>
+                <span className="text-xs font-mono text-[#4a4a5e]">
+                  System requirements
+                </span>
               </div>
               <div className="space-y-1.5">
                 {requirements.map(([label, value]) => (
-                  <div key={label} className="flex items-center gap-3 text-xs font-mono">
+                  <div
+                    key={label}
+                    className="flex items-center gap-3 text-xs font-mono"
+                  >
                     <span className="text-[#4a4a5e] w-20">{label}</span>
                     <span className="text-[#7d7d9a]">{value}</span>
                   </div>
@@ -302,7 +398,9 @@ export default function PulseMIDIContent() {
               className="glass-panel glass-panel-hover rounded-xl p-6"
             >
               <item.icon size={20} className="text-[#00d4ff] mb-4" />
-              <h3 className="text-base font-semibold text-[#f0f0f8] mb-2">{item.title}</h3>
+              <h3 className="text-base font-semibold text-[#f0f0f8] mb-2">
+                {item.title}
+              </h3>
               <p className="text-sm text-[#7d7d9a] mb-5">{item.desc}</p>
               <GlowButton
                 href={item.href}
