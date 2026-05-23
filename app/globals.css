@@ -47,14 +47,12 @@
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
 
-  /* Ernest Keyz Studios Design Tokens */
   --color-eks-cyan: #00d4ff;
   --color-eks-surface: rgba(255, 255, 255, 0.03);
   --color-eks-surface-hover: rgba(255, 255, 255, 0.06);
   --color-eks-border: rgba(255, 255, 255, 0.07);
 }
 
-/* Force dark mode as default — no light mode */
 :root {
   --background: #07070c;
   --foreground: #f0f0f8;
@@ -109,7 +107,6 @@
   }
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -124,7 +121,6 @@
   background: rgba(0, 212, 255, 0.35);
 }
 
-/* Glass panel */
 .glass-panel {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.07);
@@ -143,7 +139,6 @@
   border-color: rgba(255, 255, 255, 0.12);
 }
 
-/* Hero gradient */
 .hero-gradient {
   background:
     radial-gradient(
@@ -159,7 +154,6 @@
     #07070c;
 }
 
-/* Cyan glow effects */
 .cyan-glow-sm {
   box-shadow:
     0 0 15px rgba(0, 212, 255, 0.12),
@@ -182,7 +176,6 @@
     inset 0 0 10px rgba(0, 212, 255, 0.02);
 }
 
-/* Noise texture */
 .noise {
   position: relative;
 }
