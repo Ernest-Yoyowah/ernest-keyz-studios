@@ -12,7 +12,7 @@ const footerLinks = {
     { label: "About", href: "/about" },
     {
       label: "GitHub",
-      href: "https://github.com/ernest-keyz-studios",
+      href: "https://github.com/Ernest-Yoyowah/pulsemidi",
       external: true,
     },
   ],
@@ -43,7 +43,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-3 mt-6">
               <a
-                href="https://github.com/ernest-keyz-studios"
+                href="https://github.com/Ernest-Yoyowah/pulsemidi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/[0.07] flex items-center justify-center text-[#7d7d9a] hover:text-[#f0f0f8] hover:border-white/[0.14] transition-all duration-200"
