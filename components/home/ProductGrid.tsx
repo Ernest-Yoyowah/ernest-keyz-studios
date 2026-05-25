@@ -25,6 +25,23 @@ const products = [
     downloadHref: "/download",
   },
   {
+    name: "PulsePad",
+    tagline: "Wireless MIDI control surface",
+    description:
+      "Transform phones and tablets into modern wireless MIDI controllers for live performance, DAW control, playback systems, and worship environments. Built for musicians who need flexible realtime control on stage.",
+    status: "coming-soon" as const,
+    platform: ["iOS", "Android", "macOS Bridge"],
+    formats: ["Mobile App", "Desktop Bridge"],
+    features: [
+      "Wireless MIDI control",
+      "Performance pads and macros",
+      "XY modulation controls",
+      "DAW transport controls",
+      "Scene and playback triggering",
+    ],
+    href: "/products",
+  },
+  {
     name: "KeyMapper",
     tagline: "Advanced keyboard remapping",
     description:

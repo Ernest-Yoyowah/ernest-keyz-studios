@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ernest Keyz Studios
+
+Product website for **Ernest Keyz Studios** — an independent music software company building tools for live performers and producers who rely on MIDI hardware.
+
+Built with [Next.js 15](https://nextjs.org), [Tailwind CSS](https://tailwindcss.com), and [Framer Motion](https://www.framer.com/motion/).
+
+---
+
+## Products
+
+| Product        | Status      | Description                                                                      |
+| -------------- | ----------- | -------------------------------------------------------------------------------- |
+| **PulseMIDI**  | Available   | Real-time MIDI diagnostic tool — standalone app, VST3, and CLAP plugin for macOS |
+| **PulsePad**   | Coming Soon | Wireless MIDI control surface — turns phones and tablets into stage controllers  |
+| **KeyMapper**  | Coming Soon | Visual MIDI split, layer, and remap editor — no DAW required                     |
+| **SignalFlow** | Coming Soon | Node-based visual MIDI routing and processing engine                             |
+| **ChordScope** | Coming Soon | Real-time chord detection and harmonic analysis                                  |
+
+---
+
+## Tech Stack
+
+- **Framework** — Next.js 15 (App Router)
+- **Language** — TypeScript
+- **Styling** — Tailwind CSS v4
+- **Animations** — Framer Motion
+- **UI Components** — Radix UI / shadcn
+- **Icons** — Lucide React
+
+---
+
+## Project Structure
+
+```
+app/
+  page.tsx               # Home page
+  about/                 # About page
+  download/              # Download page (streams pkg with correct headers)
+  products/              # Products listing
+    pulsemidi/           # PulseMIDI product page
+  api/
+    download/            # API route — streams installer with Content-Length
+components/
+  home/                  # Home page sections
+  layout/                # Header and Footer
+  shared/                # Reusable components (ProductCard, AppMockup, etc.)
+lib/
+  product.ts             # Central version/filename constants — update here only
+  utils.ts
+public/
+  install/               # .pkg installer files served via /api/download
+```
+
+---
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Version / Filename Control
 
-## Learn More
+All version strings and installer filenames are defined in one place:
 
-To learn more about Next.js, take a look at the following resources:
+```ts
+// lib/product.ts
+export const PULSEMIDI_VERSION = "1.2.0";
+export const PULSEMIDI_FILE_NAME = `PulseMIDI-${PULSEMIDI_VERSION}-macOS.pkg`;
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Bump the version here and everything — download page, product cards, API route, file info panel — updates automatically. The corresponding `.pkg` file in `public/install/` must also be renamed to match.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Download Architecture
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The installer is served via `app/api/download/route.ts` rather than directly from `/public`. This sets:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `Content-Length` — browser shows real download progress
+- `Content-Disposition: attachment` — forces a file download
+- Streaming via `ReadableStream` — efficient for large binaries
