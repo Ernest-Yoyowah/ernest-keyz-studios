@@ -1,4 +1,5 @@
 "use client";
+import { PULSEMIDI_VERSION } from "@/lib/product";
 
 import { motion } from "framer-motion";
 import {
@@ -156,7 +157,7 @@ export default function PulseMIDIContent() {
               className="flex items-center gap-3 mb-6"
             >
               <span className="text-xs font-mono text-[#00d4ff]/70 bg-[#00d4ff]/08 border border-[#00d4ff]/15 px-3 py-1 rounded-full">
-                v1.2.0
+                v{PULSEMIDI_VERSION}
               </span>
               <span className="text-xs font-medium text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 px-3 py-1 rounded-full">
                 Available Now

@@ -13,6 +13,7 @@ import Link from "next/link";
 import AppMockup from "@/components/shared/AppMockup";
 import IconBox from "@/components/shared/IconBox";
 import TagBadge from "@/components/shared/TagBadge";
+import { PULSEMIDI_VERSION } from "@/lib/product";
 
 const features = [
   {
@@ -111,7 +112,7 @@ export default function FeaturedProduct() {
                 <TagBadge key={tag}>{tag}</TagBadge>
               ))}
               <span className="text-xs font-mono px-3 py-1.5 rounded-md bg-emerald-500/10 border border-emerald-500/20 text-emerald-400">
-                v1.2.0
+                v{PULSEMIDI_VERSION}
               </span>
             </div>
 

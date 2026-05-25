@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PULSEMIDI_VERSION } from "@/lib/product";
 import PageLayout from "@/components/shared/PageLayout";
 import ProductCard from "@/components/shared/ProductCard";
 import SectionHeader from "@/components/shared/SectionHeader";
@@ -17,7 +18,7 @@ const products = [
     tagline: "Real-time MIDI diagnostic tool",
     description:
       "Monitor, visualize, and debug your complete MIDI signal chain. Built for live performers who need to know exactly what's happening inside their system — in real time, with zero latency.",
-    version: "1.2.0",
+    version: PULSEMIDI_VERSION,
     status: "available" as const,
     platform: ["macOS 12+", "Intel + Apple Silicon"],
     formats: ["Standalone", "VST3", "CLAP"],
