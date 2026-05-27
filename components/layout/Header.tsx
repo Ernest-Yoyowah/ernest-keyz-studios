@@ -15,6 +15,13 @@ const navLinks = [
 
 function useDownloadHref(pathname: string): string {
   if (
+    pathname.startsWith("/products/pulsecontrol-mobile") ||
+    pathname.startsWith("/download/pulsecontrol-mobile")
+  ) {
+    return "/download/pulsecontrol-mobile";
+  }
+
+  if (
     pathname.startsWith("/products/pulsecontrol-bridge") ||
     pathname.startsWith("/download/pulsecontrol-bridge")
   ) {

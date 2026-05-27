@@ -8,6 +8,7 @@ import {
   QrCode,
   Zap,
   ExternalLink,
+  Download,
 } from "lucide-react";
 import { GithubIcon } from "@/components/shared/GithubIcon";
 import PageLayout from "@/components/shared/PageLayout";
@@ -50,17 +51,23 @@ const features = [
   },
 ];
 
-const heroTags = ["iOS", "Android", "Mobile App", "Wi-Fi", "WebSocket MIDI"];
+const heroTags = [
+  "Android",
+  "iOS Coming Soon",
+  "Mobile App",
+  "Wi-Fi",
+  "WebSocket MIDI",
+];
 
 const links = [
   {
-    icon: GithubIcon,
-    title: "GitHub Repository",
-    desc: "Track development and follow release progress",
-    href: "https://github.com/Ernest-Yoyowah",
-    cta: "Open GitHub",
-    primary: false,
-    external: true,
+    icon: Download,
+    title: "Download Android APK",
+    desc: "Free sideload APK for Android 8.0+",
+    href: "/download/pulsecontrol-mobile",
+    cta: "Download APK",
+    primary: true,
+    external: false,
   },
   {
     icon: ExternalLink,
@@ -68,8 +75,17 @@ const links = [
     desc: "The desktop companion required to use this app",
     href: "/products/pulsecontrol-bridge",
     cta: "View Bridge",
-    primary: true,
+    primary: false,
     external: false,
+  },
+  {
+    icon: GithubIcon,
+    title: "GitHub Repository",
+    desc: "Source code, issues, and release notes",
+    href: "https://github.com/Ernest-Yoyowah",
+    cta: "Open GitHub",
+    primary: false,
+    external: true,
   },
 ] as const;
 
@@ -96,8 +112,11 @@ export default function PulseControlMobileContent() {
             transition={{ duration: 0.4 }}
             className="flex items-center gap-3 mb-6"
           >
+            <span className="text-xs font-medium text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 px-3 py-1 rounded-full">
+              Android Available
+            </span>
             <span className="text-xs font-medium text-amber-400 bg-amber-400/10 border border-amber-400/20 px-3 py-1 rounded-full">
-              Coming Soon
+              iOS Coming Soon
             </span>
           </motion.div>
 
@@ -148,20 +167,19 @@ export default function PulseControlMobileContent() {
             className="flex flex-wrap gap-4"
           >
             <GlowButton
-              href="/products/pulsecontrol-bridge"
+              href="/download/pulsecontrol-mobile"
               variant="primary"
               size="lg"
             >
-              View Desktop Bridge
+              <Download size={16} />
+              Download APK
             </GlowButton>
             <GlowButton
-              href="https://github.com/Ernest-Yoyowah"
+              href="/products/pulsecontrol-bridge"
               variant="secondary"
               size="lg"
-              external
             >
-              <GithubIcon size={16} />
-              Follow on GitHub
+              View Desktop Bridge
             </GlowButton>
           </motion.div>
         </div>
@@ -198,7 +216,7 @@ export default function PulseControlMobileContent() {
       </PageSection>
 
       <PageSection className="py-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {links.map((item, i) => (
             <motion.div
               key={item.title}

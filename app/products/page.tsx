@@ -38,9 +38,10 @@ const products = [
     tagline: "Wireless MIDI control surface",
     description:
       "Professional wireless MIDI controller for iPhone and Android. Control DAWs, plugins, live playback systems, and external hardware using responsive touch faders and rotary controls over Wi-Fi.",
-    status: "coming-soon" as const,
-    platform: ["iOS", "Android"],
+    status: "available" as const,
+    platform: ["Android", "iOS Coming Soon"],
     formats: ["Mobile App"],
+    downloadHref: "/download/pulsecontrol-mobile",
     features: [
       "8 high-resolution MIDI faders",
       "8 rotary MIDI control knobs",
