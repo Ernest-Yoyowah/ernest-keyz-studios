@@ -25,43 +25,41 @@ const products = [
     downloadHref: "/download",
   },
   {
-    name: "PulsePad",
+    name: "PulseControl Mobile",
     tagline: "Wireless MIDI control surface",
     description:
-      "Transform phones and tablets into modern wireless MIDI controllers for live performance, DAW control, playback systems, and worship environments. Built for musicians who need flexible realtime control on stage.",
+      "Professional wireless MIDI controller for iPhone and Android. Control DAWs, plugins, live playback systems, and external hardware using responsive touch faders and rotary controls over Wi-Fi.",
     status: "coming-soon" as const,
-    platform: ["iOS", "Android", "macOS Bridge"],
-    formats: ["Mobile App", "Desktop Bridge"],
+    platform: ["iOS", "Android"],
+    formats: ["Mobile App"],
     features: [
-      "Wireless MIDI control",
-      "Performance pads and macros",
-      "XY modulation controls",
-      "DAW transport controls",
-      "Scene and playback triggering",
+      "8 high-resolution MIDI faders",
+      "8 rotary MIDI control knobs",
+      "Wireless WebSocket MIDI communication",
+      "Scene-based controller layouts",
+      "QR pairing with desktop bridge",
+      "Low-latency realtime control",
     ],
-    href: "/products",
+    href: "/products/pulsecontrol-mobile",
   },
   {
-    name: "KeyMapper",
-    tagline: "Advanced keyboard remapping",
+    name: "PulseControl Bridge",
+    tagline: "Desktop MIDI bridge engine",
     description:
-      "Split, layer, and remap your MIDI keyboard with a visual editor. Design complex performance setups without touching a DAW.",
-    status: "coming-soon" as const,
-    platform: ["macOS"],
-    formats: ["Standalone", "VST3"],
-    features: [],
-    href: "/products",
-  },
-  {
-    name: "SignalFlow",
-    tagline: "Visual MIDI routing engine",
-    description:
-      "Node-based MIDI routing and processing. Connect hardware and software in a modular signal graph with real-time monitoring.",
-    status: "coming-soon" as const,
-    platform: ["macOS"],
+      "Native macOS bridge application that connects PulseControl Mobile to DAWs and hardware using CoreMIDI, WebSocket transport, and automatic device discovery.",
+    status: "available" as const,
+    platform: ["macOS 11+", "Intel + Apple Silicon"],
     formats: ["Standalone"],
-    features: [],
-    href: "/products",
+    features: [
+      "CoreMIDI virtual MIDI output",
+      "Realtime WebSocket MIDI server",
+      "QR-based mobile pairing",
+      "mDNS / Bonjour auto discovery",
+      "Live MIDI activity monitoring",
+      "Universal macOS installer support",
+    ],
+    href: "/products/pulsecontrol-bridge",
+    downloadHref: "/download/pulsecontrol-bridge",
   },
 ];
 
@@ -98,8 +96,8 @@ export default function ProductGrid() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-sm text-[#7d7d9a] max-w-xs sm:text-right"
           >
-            More tools in development. Each built around a specific musician
-            problem.
+            Professional creative tools engineered for modern musicians, live
+            performers, and production workflows.
           </motion.p>
         </div>
 

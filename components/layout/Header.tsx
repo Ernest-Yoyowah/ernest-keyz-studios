@@ -11,11 +11,21 @@ const navLinks = [
   { href: "/products", label: "Products" },
   { href: "/products/pulsemidi", label: "PulseMIDI" },
   { href: "/about", label: "About" },
-  { href: "/download", label: "Download" },
 ];
+
+function useDownloadHref(pathname: string): string {
+  if (
+    pathname.startsWith("/products/pulsecontrol-bridge") ||
+    pathname.startsWith("/download/pulsecontrol-bridge")
+  ) {
+    return "/download/pulsecontrol-bridge";
+  }
+  return "/download";
+}
 
 export default function Header() {
   const pathname = usePathname();
+  const downloadHref = useDownloadHref(pathname);
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -83,7 +93,7 @@ export default function Header() {
 
           <div className="hidden md:flex items-center gap-3">
             <Link
-              href="/download"
+              href={downloadHref}
               className="px-4 py-2 text-sm font-semibold text-[#07070c] bg-[#00d4ff] rounded-md hover:bg-[#00d4ff]/90 transition-all duration-200 hover:shadow-[0_0_20px_rgba(0,212,255,0.25)]"
             >
               Download
@@ -128,10 +138,10 @@ export default function Header() {
               })}
               <div className="pt-2 border-t border-white/[0.07] mt-2">
                 <Link
-                  href="/download"
+                  href={downloadHref}
                   className="block w-full text-center px-4 py-3 text-sm font-semibold text-[#07070c] bg-[#00d4ff] rounded-md"
                 >
-                  Download PulseMIDI
+                  Download
                 </Link>
               </div>
             </nav>
