@@ -14,7 +14,7 @@ const timeline = [
   { year: "2020", title: "First scripts, then tools", body: "Started writing small Python scripts to monitor MIDI output. They worked, but they were command-line utilities — not tools any working musician could actually use on stage." },
   { year: "2022", title: "Learning Swift, building real software", body: "Switched to Swift and built the first version of what would become PulseMIDI. A native macOS app with a real interface. Something that could live in the dock and open instantly." },
   { year: "2023", title: "PulseMIDI goes public", body: "First public release on GitHub. VST3 and CLAP plugin formats added. Other musicians started filing issues, suggesting features, and actually using it in their setups." },
-  { year: "2024", title: "Ernest Keyz Studios", body: "Formalizing the work as a proper independent software company. More tools planned. The focus remains the same: software that solves real problems for real musicians." },
+  { year: "2024", title: "StudioCTRL Technologies", body: "Formalizing the work as a proper independent software company. More tools planned. The focus remains the same: software that solves real problems for real musicians." },
 ];
 
 const values = [
@@ -43,7 +43,7 @@ export default function AboutPage() {
             transition={{ duration: 0.4 }}
             className="text-xs font-semibold uppercase tracking-[0.2em] text-[#00d4ff]/60 mb-6"
           >
-            About Ernest Keyz Studios
+            About StudioCTRL
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 16 }}
@@ -61,13 +61,13 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="space-y-5 text-lg text-[#7d7d9a] leading-relaxed"
+            className="space-y-5 text-lg text-[#9898b0] leading-relaxed"
           >
             <p>
-              Ernest Keyz Studios is an independent music software company. The work sits at the intersection of live performance and software engineering — two disciplines that don&apos;t often overlap, but absolutely should.
+              StudioCTRL is a music technology company focused on building modern software for musicians, producers, keyboard players, worship teams, and live performance environments. We develop reliable, low-latency desktop and mobile tools that simplify creative workflows and help musicians perform with confidence.
             </p>
             <p>
-              The name comes from a simple reality: keyboard players are called &ldquo;keys.&rdquo; The tools here are built by a keys player, for keys players — and anyone else who relies on MIDI hardware in performance or production.
+              Every product starts with a real problem encountered on stage or in the studio — and is built to solve it completely, without compromise.
             </p>
           </motion.div>
         </div>
@@ -89,7 +89,7 @@ export default function AboutPage() {
                 <IconBox icon={v.icon} />
               </div>
               <h3 className="text-base font-semibold text-[#f0f0f8] mb-3">{v.title}</h3>
-              <p className="text-sm text-[#7d7d9a] leading-relaxed">{v.desc}</p>
+              <p className="text-sm text-[#9898b0] leading-relaxed">{v.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -119,7 +119,7 @@ export default function AboutPage() {
                     </span>
                     <div>
                       <h3 className="text-base font-semibold text-[#f0f0f8] mb-2">{item.title}</h3>
-                      <p className="text-sm text-[#7d7d9a] leading-relaxed">{item.body}</p>
+                      <p className="text-sm text-[#9898b0] leading-relaxed">{item.body}</p>
                     </div>
                   </div>
                 </div>
@@ -139,7 +139,7 @@ export default function AboutPage() {
           style={{ borderColor: "rgba(0,212,255,0.1)" }}
         >
           <h2 className="text-3xl font-bold text-[#f0f0f8] mb-4">Follow the work</h2>
-          <p className="text-[#7d7d9a] max-w-lg mx-auto mb-8">
+          <p className="text-[#9898b0] max-w-lg mx-auto mb-8">
             All development happens in the open on GitHub. File issues, suggest features, or contribute to any of the tools.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

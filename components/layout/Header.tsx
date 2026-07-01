@@ -64,7 +64,7 @@ export default function Header() {
               <LogoMark />
             </div>
             <span className="text-[#f0f0f8] font-semibold text-sm tracking-wide">
-              Ernest Keyz Studios
+              StudioCTRL
             </span>
           </Link>
 
@@ -78,7 +78,7 @@ export default function Header() {
                   className={`relative px-4 py-2 text-sm font-medium transition-colors duration-200 rounded-md ${
                     active
                       ? "text-[#00d4ff]"
-                      : "text-[#7d7d9a] hover:text-[#f0f0f8]"
+                      : "text-[#9898b0] hover:text-[#f0f0f8]"
                   }`}
                 >
                   {active && (
@@ -109,7 +109,7 @@ export default function Header() {
 
           <button
             onClick={() => setMobileOpen((v) => !v)}
-            className="md:hidden p-2 text-[#7d7d9a] hover:text-[#f0f0f8] transition-colors"
+            className="md:hidden p-2 text-[#9898b0] hover:text-[#f0f0f8] transition-colors"
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X size={20} /> : <Menu size={20} />}
@@ -136,7 +136,7 @@ export default function Header() {
                     className={`px-4 py-3 text-sm font-medium rounded-md transition-colors ${
                       active
                         ? "text-[#00d4ff] bg-[#00d4ff]/08"
-                        : "text-[#7d7d9a] hover:text-[#f0f0f8] hover:bg-white/[0.04]"
+                        : "text-[#9898b0] hover:text-[#f0f0f8] hover:bg-white/[0.04]"
                     }`}
                   >
                     {link.label}

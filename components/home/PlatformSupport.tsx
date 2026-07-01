@@ -39,7 +39,7 @@ export default function PlatformSupport() {
           <h2 className="text-3xl sm:text-4xl font-bold text-[#f0f0f8] tracking-tight">
             Works everywhere you work
           </h2>
-          <p className="mt-4 text-[#7d7d9a] max-w-lg mx-auto">
+          <p className="mt-4 text-[#9898b0] max-w-lg mx-auto">
             Universal binary support. Runs natively on Apple Silicon and Intel —
             no emulation, no compromises.
           </p>
@@ -61,7 +61,7 @@ export default function PlatformSupport() {
               <p className="text-xs font-semibold text-[#f0f0f8] mb-1">
                 {p.name}
               </p>
-              <p className="text-[10px] text-[#4a4a5e]">{p.desc}</p>
+              <p className="text-[10px] text-[#6a6a80]">{p.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -73,7 +73,7 @@ export default function PlatformSupport() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="glass-panel rounded-2xl p-8"
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#4a4a5e] mb-6 text-center">
+          <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#6a6a80] mb-6 text-center">
             Compatible DAWs
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
@@ -84,7 +84,7 @@ export default function PlatformSupport() {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.3 + i * 0.04 }}
-                className="text-sm text-[#7d7d9a] px-4 py-2 rounded-lg bg-white/[0.03] border border-white/[0.06] hover:text-[#f0f0f8] hover:border-white/[0.10] transition-colors duration-200"
+                className="text-sm text-[#9898b0] px-4 py-2 rounded-lg bg-white/[0.03] border border-white/[0.06] hover:text-[#f0f0f8] hover:border-white/[0.10] transition-colors duration-200"
               >
                 {daw}
               </motion.span>

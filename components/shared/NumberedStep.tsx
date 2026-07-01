@@ -20,7 +20,7 @@ export default function NumberedStep({
         {title && (
           <p className="text-sm font-semibold text-[#f0f0f8] mb-1">{title}</p>
         )}
-        <p className="text-sm text-[#7d7d9a] leading-relaxed">{children}</p>
+        <p className="text-sm text-[#9898b0] leading-relaxed">{children}</p>
       </div>
     </div>
   );

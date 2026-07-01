@@ -48,7 +48,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.35 }}
-          className="text-lg sm:text-xl text-[#7d7d9a] max-w-2xl mx-auto leading-relaxed mb-10"
+          className="text-lg sm:text-xl text-[#9898b0] max-w-2xl mx-auto leading-relaxed mb-10"
         >
           Professional tools for keyboard players, live performers, and music
           producers. Real-time MIDI diagnostics, chord detection, and
@@ -80,7 +80,7 @@ export default function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.7 }}
-          className="mt-6 text-xs text-[#4a4a5e]"
+          className="mt-6 text-xs text-[#6a6a80]"
         >
           macOS 12+ · Intel + Apple Silicon · Free download
         </motion.p>

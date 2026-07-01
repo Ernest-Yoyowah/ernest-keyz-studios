@@ -28,7 +28,7 @@ export default function AppMockup() {
           <div className="w-3 h-3 rounded-full bg-green-500/50" />
         </div>
         <div className="flex-1 flex items-center justify-center">
-          <span className="text-xs text-[#4a4a5e] font-mono">
+          <span className="text-xs text-[#6a6a80] font-mono">
             PulseMIDI — MIDI Monitor
           </span>
         </div>
@@ -37,7 +37,7 @@ export default function AppMockup() {
       <div className="p-6 space-y-5">
         <div>
           <div className="flex items-center justify-between mb-2">
-            <span className="text-xs font-mono text-[#4a4a5e]">SIGNAL</span>
+            <span className="text-xs font-mono text-[#6a6a80]">SIGNAL</span>
             <span className="text-xs font-mono text-[#00d4ff]/50">● LIVE</span>
           </div>
           <div className="flex items-end gap-0.5 h-14 bg-black/20 rounded-lg p-2">
@@ -66,7 +66,7 @@ export default function AppMockup() {
         </div>
 
         <div className="space-y-1">
-          <div className="grid grid-cols-4 gap-2 px-3 py-1 text-[10px] font-mono text-[#4a4a5e] uppercase">
+          <div className="grid grid-cols-4 gap-2 px-3 py-1 text-[10px] font-mono text-[#6a6a80] uppercase">
             <span>Time</span>
             <span>Ch</span>
             <span>Type</span>
@@ -77,9 +77,9 @@ export default function AppMockup() {
               key={i}
               className="grid grid-cols-4 gap-2 px-3 py-2 text-xs font-mono rounded-md bg-white/[0.02] border border-white/[0.04]"
             >
-              <span className="text-[#4a4a5e]">{row.t}</span>
+              <span className="text-[#6a6a80]">{row.t}</span>
               <span className="text-[#00d4ff]/60">{row.ch}</span>
-              <span className="text-[#7d7d9a]">{row.type}</span>
+              <span className="text-[#9898b0]">{row.type}</span>
               <span className="text-[#f0f0f8]/60">{row.v}</span>
             </div>
           ))}

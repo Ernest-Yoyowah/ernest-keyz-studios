@@ -166,7 +166,7 @@ export default function PulseControlBridgeContent() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-base text-[#7d7d9a] leading-relaxed max-w-lg mb-8"
+            className="text-base text-[#9898b0] leading-relaxed max-w-lg mb-8"
           >
             Native macOS application that connects PulseControl Mobile to your
             DAW and MIDI hardware. Runs a local WebSocket server, creates a
@@ -233,7 +233,7 @@ export default function PulseControlBridgeContent() {
               <h3 className="text-base font-semibold text-[#f0f0f8] mb-3">
                 {feature.title}
               </h3>
-              <p className="text-sm text-[#7d7d9a] leading-relaxed">
+              <p className="text-sm text-[#9898b0] leading-relaxed">
                 {feature.desc}
               </p>
             </motion.div>
@@ -254,7 +254,7 @@ export default function PulseControlBridgeContent() {
               title="Built on native macOS frameworks"
               className="mb-6"
             />
-            <p className="text-sm text-[#7d7d9a] leading-relaxed mb-8">
+            <p className="text-sm text-[#9898b0] leading-relaxed mb-8">
               PulseControl Bridge is a native Swift application using
               Network.framework for WebSocket transport and CoreMIDI for virtual
               port management. Bonjour / mDNS handles local network service
@@ -273,7 +273,7 @@ export default function PulseControlBridgeContent() {
                   <span className="text-sm font-mono text-[#f0f0f8]">
                     {tech.name}
                   </span>
-                  <span className="text-xs text-[#4a4a5e]">
+                  <span className="text-xs text-[#6a6a80]">
                     {tech.category}
                   </span>
                 </motion.div>
@@ -309,7 +309,7 @@ export default function PulseControlBridgeContent() {
             <div className="glass-panel rounded-xl p-5">
               <div className="flex items-center gap-2 mb-3">
                 <Terminal size={14} className="text-[#00d4ff]/60" />
-                <span className="text-xs font-mono text-[#4a4a5e]">
+                <span className="text-xs font-mono text-[#6a6a80]">
                   System requirements
                 </span>
               </div>
@@ -319,8 +319,8 @@ export default function PulseControlBridgeContent() {
                     key={label}
                     className="flex items-center gap-3 text-xs font-mono"
                   >
-                    <span className="text-[#4a4a5e] w-20">{label}</span>
-                    <span className="text-[#7d7d9a]">{value}</span>
+                    <span className="text-[#6a6a80] w-20">{label}</span>
+                    <span className="text-[#9898b0]">{value}</span>
                   </div>
                 ))}
               </div>
@@ -344,7 +344,7 @@ export default function PulseControlBridgeContent() {
               <h3 className="text-base font-semibold text-[#f0f0f8] mb-2">
                 {item.title}
               </h3>
-              <p className="text-sm text-[#7d7d9a] mb-5">{item.desc}</p>
+              <p className="text-sm text-[#9898b0] mb-5">{item.desc}</p>
               <GlowButton
                 href={item.href}
                 variant={item.primary ? "primary" : "ghost"}

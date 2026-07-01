@@ -95,7 +95,7 @@ export default function ProductGrid() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-sm text-[#7d7d9a] max-w-xs sm:text-right"
+            className="text-sm text-[#9898b0] max-w-xs sm:text-right"
           >
             Professional creative tools engineered for modern musicians, live
             performers, and production workflows.

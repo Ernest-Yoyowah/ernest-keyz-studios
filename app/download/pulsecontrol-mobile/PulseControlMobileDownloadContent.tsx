@@ -93,7 +93,7 @@ function ReleaseCard({
                 {release.tag}
               </span>
             </div>
-            <p className="text-xs text-[#4a4a5e]">
+            <p className="text-xs text-[#6a6a80]">
               Released {release.date}
               {release.downloadable ? ` · ${fileSize}` : ""}
             </p>
@@ -110,21 +110,21 @@ function ReleaseCard({
               {packageLabel}
             </a>
           )}
-          <button className="text-[#4a4a5e] hover:text-[#f0f0f8] transition-colors">
+          <button className="text-[#6a6a80] hover:text-[#f0f0f8] transition-colors">
             {expanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
           </button>
         </div>
       </div>
       {expanded && (
         <div className="px-6 pb-6 border-t border-white/[0.05]">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#4a4a5e] mt-5 mb-4">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#6a6a80] mt-5 mb-4">
             Release Notes
           </p>
           <ul className="space-y-2">
             {release.notes.map((note) => (
               <li
                 key={note}
-                className="flex items-start gap-2.5 text-sm text-[#7d7d9a]"
+                className="flex items-start gap-2.5 text-sm text-[#9898b0]"
               >
                 <span className="w-1 h-1 rounded-full bg-[#00d4ff]/40 mt-2 shrink-0" />
                 {note}
@@ -171,7 +171,7 @@ export default function PulseControlMobileDownloadContent({
             <h1 className="text-4xl sm:text-5xl font-bold text-[#f0f0f8] tracking-tight mb-4">
               Download PulseControl Mobile
             </h1>
-            <p className="text-lg text-[#7d7d9a] max-w-xl">
+            <p className="text-lg text-[#9898b0] max-w-xl">
               Free Android package. Requires PulseControl Bridge on macOS to
               function.{" "}
               {isZipPackage ? "Download ZIP and extract the APK." : ""}
@@ -212,7 +212,7 @@ export default function PulseControlMobileDownloadContent({
                     Android
                   </span>
                 </div>
-                <p className="text-[#7d7d9a] mb-6 leading-relaxed">
+                <p className="text-[#9898b0] mb-6 leading-relaxed">
                   Wireless MIDI control surface. Touch faders and rotary knobs
                   over Wi-Fi — pairs with PulseControl Bridge on macOS via QR
                   code.
@@ -221,7 +221,7 @@ export default function PulseControlMobileDownloadContent({
                   {systemBadges.map((item) => (
                     <div
                       key={item.label}
-                      className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/[0.04] border border-white/[0.07] text-xs text-[#7d7d9a]"
+                      className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/[0.04] border border-white/[0.07] text-xs text-[#9898b0]"
                     >
                       <item.icon size={12} />
                       {item.label}
@@ -250,16 +250,16 @@ export default function PulseControlMobileDownloadContent({
               </div>
 
               <div className="glass-panel rounded-xl p-5 font-mono">
-                <p className="text-xs text-[#4a4a5e] uppercase tracking-widest mb-4">
+                <p className="text-xs text-[#6a6a80] uppercase tracking-widest mb-4">
                   File info
                 </p>
                 <div className="space-y-3">
                   {fileInfo.map(([key, val]) => (
                     <div key={key} className="flex items-start gap-3 text-xs">
-                      <span className="text-[#4a4a5e] w-28 shrink-0">
+                      <span className="text-[#6a6a80] w-28 shrink-0">
                         {key}
                       </span>
-                      <span className="text-[#7d7d9a] break-all">{val}</span>
+                      <span className="text-[#9898b0] break-all">{val}</span>
                     </div>
                   ))}
                 </div>

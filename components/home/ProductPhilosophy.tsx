@@ -47,7 +47,7 @@ export default function ProductPhilosophy() {
               <br />
               <span className="text-[#00d4ff]">instrument</span>
             </h2>
-            <p className="text-base text-[#7d7d9a] leading-relaxed max-w-sm">
+            <p className="text-base text-[#9898b0] leading-relaxed max-w-sm">
               MIDI tools designed by a keyboard player who got tired of bloated
               software that never quite understood what a live performance
               actually requires.
@@ -73,7 +73,7 @@ export default function ProductPhilosophy() {
                     <h3 className="text-base font-semibold text-[#f0f0f8] mb-2 group-hover:text-[#00d4ff] transition-colors duration-200">
                       {p.title}
                     </h3>
-                    <p className="text-sm text-[#7d7d9a] leading-relaxed">
+                    <p className="text-sm text-[#9898b0] leading-relaxed">
                       {p.body}
                     </p>
                   </div>

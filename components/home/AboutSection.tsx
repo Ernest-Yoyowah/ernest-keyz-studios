@@ -34,10 +34,11 @@ export default function AboutSection() {
               <br />
               who codes
             </h2>
-            <div className="space-y-4 text-base text-[#7d7d9a] leading-relaxed max-w-lg">
+            <div className="space-y-4 text-base text-[#9898b0] leading-relaxed max-w-lg">
               <p>
-                Ernest Keyz Studios is an independent music software company
-                built around one core belief: the best tools come from people
+                StudioCTRL develops professional software for musicians,
+                producers, keyboard players, and live performance environments
+                — built around one core belief: the best tools come from people
                 who actually use them.
               </p>
               <p>
@@ -101,7 +102,7 @@ export default function AboutSection() {
                 <p className="text-xs font-medium text-[#f0f0f8]/60 mb-2">
                   {stat.unit}
                 </p>
-                <p className="text-xs text-[#4a4a5e] font-mono">{stat.label}</p>
+                <p className="text-xs text-[#6a6a80] font-mono">{stat.label}</p>
               </motion.div>
             ))}
           </motion.div>

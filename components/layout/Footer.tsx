@@ -34,10 +34,10 @@ export default function Footer() {
                 <LogoMark />
               </div>
               <span className="text-[#f0f0f8] font-semibold text-sm">
-                Ernest Keyz Studios
+                StudioCTRL
               </span>
             </Link>
-            <p className="text-[#7d7d9a] text-sm leading-relaxed max-w-xs">
+            <p className="text-[#9898b0] text-sm leading-relaxed max-w-xs">
               Software tools for modern musicians, keyboard players, and live
               performance systems.
             </p>
@@ -46,7 +46,7 @@ export default function Footer() {
                 href="https://github.com/Ernest-Yoyowah/pulsemidi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/[0.07] flex items-center justify-center text-[#7d7d9a] hover:text-[#f0f0f8] hover:border-white/[0.14] transition-all duration-200"
+                className="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/[0.07] flex items-center justify-center text-[#9898b0] hover:text-[#f0f0f8] hover:border-white/[0.14] transition-all duration-200"
                 aria-label="GitHub"
               >
                 <GithubIcon size={16} />
@@ -55,7 +55,7 @@ export default function Footer() {
                 href="https://twitter.com/ernestkeyzstudios"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/[0.07] flex items-center justify-center text-[#7d7d9a] hover:text-[#f0f0f8] hover:border-white/[0.14] transition-all duration-200"
+                className="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/[0.07] flex items-center justify-center text-[#9898b0] hover:text-[#f0f0f8] hover:border-white/[0.14] transition-all duration-200"
                 aria-label="Twitter"
               >
                 <XIcon size={16} />
@@ -65,7 +65,7 @@ export default function Footer() {
 
           {Object.entries(footerLinks).map(([section, links]) => (
             <div key={section}>
-              <h3 className="text-xs font-semibold text-[#4a4a5e] uppercase tracking-widest mb-4">
+              <h3 className="text-xs font-semibold text-[#6a6a80] uppercase tracking-widest mb-4">
                 {section}
               </h3>
               <ul className="space-y-3">
@@ -76,14 +76,14 @@ export default function Footer() {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-[#7d7d9a] hover:text-[#f0f0f8] transition-colors duration-200"
+                        className="text-sm text-[#9898b0] hover:text-[#f0f0f8] transition-colors duration-200"
                       >
                         {link.label}
                       </a>
                     ) : (
                       <Link
                         href={link.href}
-                        className="text-sm text-[#7d7d9a] hover:text-[#f0f0f8] transition-colors duration-200"
+                        className="text-sm text-[#9898b0] hover:text-[#f0f0f8] transition-colors duration-200"
                       >
                         {link.label}
                       </Link>
@@ -96,11 +96,11 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-[#4a4a5e]">
-            © {new Date().getFullYear()} Ernest Keyz Studios. All rights
+          <p className="text-xs text-[#6a6a80]">
+            © {new Date().getFullYear()} StudioCTRL Technologies. All rights
             reserved.
           </p>
-          <div className="flex items-center gap-1 text-xs text-[#4a4a5e]">
+          <div className="flex items-center gap-1 text-xs text-[#6a6a80]">
             <span>Built for musicians who code</span>
             <span className="mx-1 text-[#00d4ff]/40">·</span>
             <span className="text-[#00d4ff]/60">macOS</span>

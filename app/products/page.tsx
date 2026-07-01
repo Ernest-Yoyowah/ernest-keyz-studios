@@ -9,7 +9,7 @@ import { GithubIcon } from "@/components/shared/GithubIcon";
 export const metadata: Metadata = {
   title: "Products",
   description:
-    "All software tools from Ernest Keyz Studios — MIDI diagnostics, keyboard tools, and live performance software for macOS.",
+    "All software tools from StudioCTRL — MIDI diagnostics, keyboard tools, and live performance software for macOS.",
 };
 
 const products = [
@@ -93,16 +93,16 @@ export default function ProductsPage() {
           </div>
 
           <div className="mt-16 glass-panel rounded-2xl p-8 text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#4a4a5e] mb-3">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#6a6a80] mb-3">
               Roadmap
             </p>
             <h3 className="text-xl font-bold text-[#f0f0f8] mb-3">
               More tools are coming
             </h3>
-            <p className="text-sm text-[#7d7d9a] max-w-lg mx-auto">
-              Ernest Keyz Studios releases tools based on real musician
-              problems. Follow on GitHub to track development, submit feature
-              requests, or contribute.
+            <p className="text-sm text-[#9898b0] max-w-lg mx-auto">
+              StudioCTRL releases tools based on real musician problems. Follow
+              on GitHub to track development, submit feature requests, or
+              contribute.
             </p>
             <div className="mt-6 flex justify-center">
               <GlowButton

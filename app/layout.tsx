@@ -14,11 +14,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Ernest Keyz Studios — Software Tools for Modern Musicians",
-    template: "%s | Ernest Keyz Studios",
+    default: "StudioCTRL — Software Tools for Modern Musicians",
+    template: "%s | StudioCTRL",
   },
   description:
-    "Ernest Keyz Studios builds professional software tools for musicians, keyboard players, live performers, and music producers. Real-time MIDI diagnostics, chord detection, and performance system tools.",
+    "StudioCTRL builds professional software tools for musicians, keyboard players, live performers, and music producers. Real-time MIDI diagnostics, chord detection, and performance system tools.",
   keywords: [
     "MIDI tools",
     "music software",
@@ -32,20 +32,20 @@ export const metadata: Metadata = {
     "CLAP plugin",
     "macOS music software",
   ],
-  authors: [{ name: "Ernest Keyz Studios" }],
-  creator: "Ernest Keyz Studios",
+  authors: [{ name: "StudioCTRL Technologies" }],
+  creator: "StudioCTRL Technologies",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://ernestkeyzstudios.com",
-    siteName: "Ernest Keyz Studios",
-    title: "Ernest Keyz Studios — Software Tools for Modern Musicians",
+    url: "https://studioctrl.com",
+    siteName: "StudioCTRL",
+    title: "StudioCTRL — Software Tools for Modern Musicians",
     description:
       "Professional software tools for musicians, keyboard players, and live performers.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ernest Keyz Studios",
+    title: "StudioCTRL",
     description:
       "Software tools for modern musicians and live performance systems.",
   },

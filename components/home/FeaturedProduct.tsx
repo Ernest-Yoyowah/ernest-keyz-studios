@@ -77,7 +77,7 @@ export default function FeaturedProduct() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.15 }}
-          className="text-lg text-[#7d7d9a] text-center max-w-xl mx-auto mb-16"
+          className="text-lg text-[#9898b0] text-center max-w-xl mx-auto mb-16"
         >
           Real-time MIDI diagnostic tool for macOS. Monitor, visualize, and
           debug your entire MIDI signal chain from a single interface.
@@ -130,7 +130,7 @@ export default function FeaturedProduct() {
                   <p className="text-sm font-medium text-[#f0f0f8]">
                     {feat.label}
                   </p>
-                  <p className="text-xs text-[#7d7d9a] mt-0.5">{feat.desc}</p>
+                  <p className="text-xs text-[#9898b0] mt-0.5">{feat.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -145,7 +145,7 @@ export default function FeaturedProduct() {
               </Link>
               <Link
                 href="/products/pulsemidi"
-                className="flex items-center gap-1.5 text-sm font-medium text-[#7d7d9a] hover:text-[#00d4ff] transition-colors"
+                className="flex items-center gap-1.5 text-sm font-medium text-[#9898b0] hover:text-[#00d4ff] transition-colors"
               >
                 Full documentation
                 <ArrowRight size={14} />

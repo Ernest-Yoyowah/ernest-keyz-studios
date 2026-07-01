@@ -142,7 +142,7 @@ export default function PulseControlMobileContent() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-base text-[#7d7d9a] leading-relaxed max-w-lg mb-8"
+            className="text-base text-[#9898b0] leading-relaxed max-w-lg mb-8"
           >
             Transform your phone into a professional wireless MIDI controller.
             Touch faders, rotary knobs, and scene-based layouts — connected to
@@ -207,7 +207,7 @@ export default function PulseControlMobileContent() {
               <h3 className="text-base font-semibold text-[#f0f0f8] mb-3">
                 {feature.title}
               </h3>
-              <p className="text-sm text-[#7d7d9a] leading-relaxed">
+              <p className="text-sm text-[#9898b0] leading-relaxed">
                 {feature.desc}
               </p>
             </motion.div>
@@ -230,7 +230,7 @@ export default function PulseControlMobileContent() {
               <h3 className="text-base font-semibold text-[#f0f0f8] mb-2">
                 {item.title}
               </h3>
-              <p className="text-sm text-[#7d7d9a] mb-5">{item.desc}</p>
+              <p className="text-sm text-[#9898b0] mb-5">{item.desc}</p>
               <GlowButton
                 href={item.href}
                 variant={item.primary ? "primary" : "ghost"}

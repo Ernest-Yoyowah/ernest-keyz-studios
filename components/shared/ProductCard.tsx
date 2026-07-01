@@ -29,7 +29,7 @@ const statusConfig = {
   },
   "coming-soon": {
     label: "Coming Soon",
-    className: "text-[#7d7d9a] bg-white/[0.04] border-white/[0.08]",
+    className: "text-[#9898b0] bg-white/[0.04] border-white/[0.08]",
   },
 };
 
@@ -75,14 +75,14 @@ export default function ProductCard({
           </span>
         </div>
 
-        <p className="text-sm text-[#7d7d9a] leading-relaxed">{description}</p>
+        <p className="text-sm text-[#9898b0] leading-relaxed">{description}</p>
 
         {features.length > 0 && (
           <ul className="space-y-1.5">
             {features.map((f) => (
               <li
                 key={f}
-                className="flex items-center gap-2 text-xs text-[#7d7d9a]"
+                className="flex items-center gap-2 text-xs text-[#9898b0]"
               >
                 <CheckCircle size={12} className="text-[#00d4ff]/60 shrink-0" />
                 {f}
@@ -113,14 +113,14 @@ export default function ProductCard({
           {href && (
             <Link
               href={href}
-              className="flex items-center gap-1.5 text-xs font-medium text-[#7d7d9a] hover:text-[#f0f0f8] transition-colors"
+              className="flex items-center gap-1.5 text-xs font-medium text-[#9898b0] hover:text-[#f0f0f8] transition-colors"
             >
               Learn more
               <ExternalLink size={12} />
             </Link>
           )}
           {status === "coming-soon" && (
-            <span className="text-xs text-[#4a4a5e]">In development</span>
+            <span className="text-xs text-[#6a6a80]">In development</span>
           )}
         </div>
       </div>

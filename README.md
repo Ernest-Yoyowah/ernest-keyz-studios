@@ -1,6 +1,6 @@
-# Ernest Keyz Studios
+# StudioCTRL
 
-Product website for **Ernest Keyz Studios** — an independent music software company building tools for live performers and producers who rely on MIDI hardware.
+Product website for **StudioCTRL Technologies** — a music technology company building professional software for musicians, producers, keyboard players, and live performance environments.
 
 Built with [Next.js 15](https://nextjs.org), [Tailwind CSS](https://tailwindcss.com), and [Framer Motion](https://www.framer.com/motion/).
 
