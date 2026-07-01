@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://studioctrl.com",
+    url: "https://studioctrl.vercel.app",
     siteName: "StudioCTRL",
     title: "StudioCTRL — Software Tools for Modern Musicians",
     description:
