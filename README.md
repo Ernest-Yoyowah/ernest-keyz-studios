@@ -71,7 +71,7 @@ All version strings and installer filenames are defined in one place:
 ```ts
 // lib/product.ts
 export const PULSEMIDI_VERSION = "1.2.0";
-export const PULSEMIDI_FILE_NAME = `PulseMIDI-${PULSEMIDI_VERSION}-macOS.pkg`;
+export const PULSEMIDI_FILE_NAME = `PulseMIDI-${PULSEMIDI_VERSION}-macOS.dmg`;
 ```
 
 Bump the version here and everything — download page, product cards, API route, file info panel — updates automatically. The corresponding `.pkg` file in `public/install/` must also be renamed to match.
