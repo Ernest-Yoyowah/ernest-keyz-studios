@@ -48,7 +48,7 @@ lib/
   product.ts             # Central version/filename constants — update here only
   utils.ts
 public/
-  install/               # .pkg installer files served via /api/download
+  install/               # .dmg installer files served via /api/download
 ```
 
 ---
@@ -74,7 +74,7 @@ export const PULSEMIDI_VERSION = "1.2.0";
 export const PULSEMIDI_FILE_NAME = `PulseMIDI-${PULSEMIDI_VERSION}-macOS.dmg`;
 ```
 
-Bump the version here and everything — download page, product cards, API route, file info panel — updates automatically. The corresponding `.pkg` file in `public/install/` must also be renamed to match.
+Bump the version here and everything — download page, product cards, API route, file info panel — updates automatically. The corresponding `.dmg` file in `public/install/` must also be renamed to match.
 
 ---
 

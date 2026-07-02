@@ -50,8 +50,8 @@ const releases = [
 ];
 
 const quickStartSteps = [
-  { title: "Download", desc: "Get the .pkg installer above" },
-  { title: "Install", desc: "Run the .pkg and follow the installer" },
+  { title: "Download", desc: "Get the .dmg installer above" },
+  { title: "Install", desc: "Run the .dmg and follow the installer" },
   { title: "Grant Access", desc: "Allow MIDI access on first launch" },
   { title: "Connect", desc: "Your devices appear automatically" },
 ];
@@ -111,7 +111,7 @@ function ReleaseCard({
               className="flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-[#07070c] bg-[#00d4ff] rounded-lg hover:bg-[#00d4ff]/90 transition-all hover:shadow-[0_0_12px_rgba(0,212,255,0.2)]"
             >
               <Download size={12} />
-              .pkg
+              .dmg
             </a>
           )}
           <button className="text-[#6a6a80] hover:text-[#f0f0f8] transition-colors">
@@ -220,7 +220,7 @@ export default function DownloadPageContent({
                     className="flex items-center gap-2 px-6 py-3 text-sm font-semibold text-[#07070c] bg-[#00d4ff] rounded-lg hover:bg-[#00d4ff]/90 transition-all hover:shadow-[0_0_24px_rgba(0,212,255,0.3)] cyan-glow"
                   >
                     <Download size={16} />
-                    Download .pkg (Universal)
+                    Download .dmg (Universal)
                   </a>
                   <GlowButton
                     href="https://github.com/Ernest-Yoyowah/pulsemidi/releases"

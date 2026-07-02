@@ -49,7 +49,7 @@ const features = [
   {
     icon: Package,
     title: "Universal macOS Installer",
-    desc: "Distributed as a signed .pkg installer with full support for Apple Silicon and Intel Macs. Compatible with macOS 11 Big Sur and later. Installed as a standard macOS application with no additional runtime dependencies.",
+    desc: "Distributed as a signed .dmg installer with full support for Apple Silicon and Intel Macs. Compatible with macOS 11 Big Sur and later. Installed as a standard macOS application with no additional runtime dependencies.",
   },
 ];
 
@@ -63,8 +63,8 @@ const techStack = [
 ];
 
 const installSteps = [
-  "Download the .pkg installer from the download page",
-  "Run the .pkg and follow the installer steps",
+  "Download the .dmg installer from the download page",
+  "Run the .dmg and follow the installer steps",
   "Launch PulseControl Bridge from Applications or Spotlight",
   "Grant network access permission when prompted",
   "Scan the displayed QR code from PulseControl Mobile",

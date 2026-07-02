@@ -68,8 +68,8 @@ const techStack = [
 ];
 
 const installSteps = [
-  "Download the .pkg installer from the download page",
-  "Run the .pkg and follow the installer steps",
+  "Download the .dmg installer from the download page",
+  "Run the .dmg and follow the installer steps",
   "Launch PulseMIDI from Applications or Spotlight",
   "Grant MIDI access permission when prompted",
   "Connect your MIDI devices — they appear automatically",
