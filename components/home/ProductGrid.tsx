@@ -1,5 +1,5 @@
 "use client";
-import { PULSEMIDI_VERSION } from "@/lib/product";
+import { PULSEMIDI_VERSION, LIVEKEY_VERSION } from "@/lib/product";
 
 import { motion } from "framer-motion";
 import ProductCard from "@/components/shared/ProductCard";
@@ -62,6 +62,25 @@ const products = [
     href: "/products/pulsecontrol-bridge",
     downloadHref: "/download/pulsecontrol-bridge",
   },
+  {
+    name: "LiveKey",
+    tagline: "Real-time live key detection",
+    description:
+      "Listens through a microphone and identifies the musical key a singer is in — in real time. Built for worship musicians and keyboard players who need an instant, reliable answer on stage.",
+    version: LIVEKEY_VERSION,
+    status: "available" as const,
+    platform: ["macOS 11+", "Intel + Apple Silicon"],
+    formats: ["Standalone"],
+    features: [
+      "YIN pitch detection at 20–50 Hz",
+      "Krumhansl-Schmuckler key identification",
+      "88-key canvas piano visualization",
+      "Scale degree numbers (1–7)",
+      "Chord suggestions after 78% confidence",
+    ],
+    href: "/products/livekey",
+    downloadHref: "/download/livekey",
+  },
 ];
 
 export default function ProductGrid() {
@@ -102,7 +121,7 @@ export default function ProductGrid() {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {products.map((product, i) => (
             <motion.div
               key={product.name}

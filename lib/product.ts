@@ -6,3 +6,6 @@ export const PULSECONTROL_BRIDGE_FILE_NAME = `PulseControl-Bridge-${PULSECONTROL
 
 export const PULSECONTROL_MOBILE_APK_FILE_NAME = "pulseControl.apk";
 export const PULSECONTROL_MOBILE_ZIP_FILE_NAME = "pulseControl.zip";
+
+export const LIVEKEY_VERSION = "1.0.0";
+export const LIVEKEY_FILE_NAME = `LiveKey_${LIVEKEY_VERSION}_universal.dmg`;

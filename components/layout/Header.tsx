@@ -10,6 +10,7 @@ import { LogoMark } from "@/components/shared/LogoMark";
 const navLinks = [
   { href: "/products", label: "Products" },
   { href: "/products/pulsemidi", label: "PulseMIDI" },
+  { href: "/products/livekey", label: "LiveKey" },
   { href: "/about", label: "About" },
 ];
 
@@ -27,6 +28,14 @@ function useDownloadHref(pathname: string): string {
   ) {
     return "/download/pulsecontrol-bridge";
   }
+
+  if (
+    pathname.startsWith("/products/livekey") ||
+    pathname.startsWith("/download/livekey")
+  ) {
+    return "/download/livekey";
+  }
+
   return "/download";
 }
 

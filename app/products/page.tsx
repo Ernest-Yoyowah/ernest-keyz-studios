@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { PULSEMIDI_VERSION } from "@/lib/product";
+import { PULSEMIDI_VERSION, LIVEKEY_VERSION } from "@/lib/product";
 import PageLayout from "@/components/shared/PageLayout";
 import ProductCard from "@/components/shared/ProductCard";
 import SectionHeader from "@/components/shared/SectionHeader";
@@ -70,6 +70,26 @@ const products = [
     ],
     href: "/products/pulsecontrol-bridge",
     downloadHref: "/download/pulsecontrol-bridge",
+  },
+  {
+    name: "LiveKey",
+    tagline: "Real-time live key detection",
+    description:
+      "Listens through a microphone and identifies the musical key a singer is in — in real time, with no guessing. Tonal analysis using YIN pitch detection and Krumhansl-Schmuckler profiles, running entirely on-device.",
+    version: LIVEKEY_VERSION,
+    status: "available" as const,
+    platform: ["macOS 11+", "Intel + Apple Silicon"],
+    formats: ["Standalone"],
+    features: [
+      "YIN pitch detection at 20–50 Hz update rate",
+      "Krumhansl-Schmuckler key identification",
+      "88-key canvas piano with color-coded notes",
+      "Scale degree numbers (1–7) for worship musicians",
+      "Chord suggestions after 78% confidence",
+      "30-second scrolling piano roll timeline",
+    ],
+    href: "/products/livekey",
+    downloadHref: "/download/livekey",
   },
 ];
 

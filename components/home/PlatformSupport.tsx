@@ -34,14 +34,14 @@ export default function PlatformSupport() {
           className="text-center mb-14"
         >
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#00d4ff]/60 mb-4">
-            Platform Support
+            PulseMIDI · Platform Support
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-[#f0f0f8] tracking-tight">
             Works everywhere you work
           </h2>
           <p className="mt-4 text-[#9898b0] max-w-lg mx-auto">
-            Universal binary support. Runs natively on Apple Silicon and Intel —
-            no emulation, no compromises.
+            Universal binary — runs natively on Apple Silicon and Intel with
+            Standalone, VST3, and CLAP plugin formats.
           </p>
         </motion.div>
 

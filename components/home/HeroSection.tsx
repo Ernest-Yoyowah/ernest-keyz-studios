@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Download, ArrowRight } from "lucide-react";
-import { GithubIcon } from "@/components/shared/GithubIcon";
 import AnimatedBackground from "@/components/shared/AnimatedBackground";
 import GlowButton from "@/components/shared/GlowButton";
 
@@ -19,7 +18,7 @@ export default function HeroSection() {
           className="inline-flex items-center gap-2 mb-8 px-3 py-1.5 rounded-full border border-[#00d4ff]/20 bg-[#00d4ff]/05 text-xs font-medium text-[#00d4ff]/80"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-[#00d4ff] animate-pulse" />
-          PulseMIDI 1.2 now available — macOS universal binary
+          LiveKey 1.0 now available — real-time key detection
           <ArrowRight size={11} className="opacity-60" />
         </motion.div>
 
@@ -61,18 +60,13 @@ export default function HeroSection() {
           transition={{ duration: 0.5, delay: 0.5 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <GlowButton href="/download" variant="primary" size="lg">
-            <Download size={17} />
-            Download PulseMIDI
+          <GlowButton href="/products" variant="primary" size="lg">
+            Explore Products
+            <ArrowRight size={17} />
           </GlowButton>
-          <GlowButton
-            href="https://github.com/Ernest-Yoyowah/pulsemidi"
-            variant="secondary"
-            size="lg"
-            external
-          >
-            <GithubIcon size={17} />
-            View on GitHub
+          <GlowButton href="/download" variant="secondary" size="lg">
+            <Download size={17} />
+            Download Free
           </GlowButton>
         </motion.div>
 
@@ -82,7 +76,7 @@ export default function HeroSection() {
           transition={{ duration: 0.5, delay: 0.7 }}
           className="mt-6 text-xs text-[#6a6a80]"
         >
-          macOS 12+ · Intel + Apple Silicon · Free download
+          macOS · iOS · Android · Free to download
         </motion.p>
       </div>
 
